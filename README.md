@@ -30,7 +30,7 @@ dotnet tool install --global dotnet-ef
 ## Setup
 Clone and cd into the repo:
 ```
-git clone https://github.com/<your-username>/ExpressionCalculator.git
+git clone https://github.com/mayanktolani19/ExpressionCalculator.git
 cd ExpressionCalculator
 ```
 
