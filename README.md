@@ -34,6 +34,14 @@ git clone https://github.com/mayanktolani19/ExpressionCalculator.git
 cd ExpressionCalculator
 ```
 
+Database connection string must be set correctly in appsettings.json as per your SQL Server setup:
+```json
+"ConnectionStrings": {
+    "DefaultConnection": "Server=localhost,1433;Initial Catalog=ExpressionCalculator_DB;User ID=<<userId>>;Password=<<password>>;MultipleActiveResultSets=False;TrustServerCertificate=True;Connection Timeout=30;"
+}
+```
+Replace `<<userId>>` and `<<password>>` with your SQL Server credentials.
+
 ### Run database migration
 ```
 cd ExpressionCalculator.Database
@@ -42,6 +50,7 @@ dotnet ef database update
 ```
 
 The ExpressionCalculator.API must be set as the starter project.
+
 
 ### The API will be available at
 ```
